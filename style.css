@@ -13,11 +13,6 @@ button {
     color: #414059;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 button:hover {
     cursor: pointer;
 }
@@ -99,17 +94,20 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 5rem;
 }
 
-#calculator button {
+#calculator a {
     background-color: #414059;
+    text-decoration: none;
+    color: white;
     border: none;
-    padding: 1%;
+    padding: 0.7%;
     border-radius: 1rem;
     font-size: 1rem;
 }
 
-#calculator button:hover {
+#calculator a:hover {
     background-color: #2a2938;
 }
+
 
 #bevarage {
     display: flex;

@@ -18,11 +18,11 @@
         background-color: #555475;
     }
 
-    & #calculator button {
+    & #calculator a {
         background-color: #2a2938;
     }
 
-    & #calculator button:hover {
+    & #calculator a:hover {
         background-color: #555475;
     }
 }

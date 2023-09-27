@@ -75,12 +75,11 @@ divBevarage.appendChild(labelBevarage);
 divBevarage.appendChild(checkBevarage);
 
 // Botão
-const btnCalc = document.createElement('button');
 const btnResponse = document.createElement('a');
 
 btnResponse.innerText = 'Calcular';
 
 btnResponse.setAttribute('href', '#response');
 
-calculator.appendChild(btnCalc);
-btnCalc.appendChild(btnResponse);
+calculator.appendChild(btnResponse);
+

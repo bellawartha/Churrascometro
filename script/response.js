@@ -22,3 +22,6 @@ h2Comum.innerText = 'Opção Comum';
 divText.appendChild(divComum);
 divComum.appendChild(h2Comum);
 divComum.appendChild(pComum);
+
+// Bebidas
+const bevarageResponse = document.createElement('div');

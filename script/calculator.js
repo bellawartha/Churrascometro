@@ -1,8 +1,13 @@
-btnCalc.addEventListener('click', () => {
+btnResponse.addEventListener('click', () => {
     response.style.display = 'flex';
     calcMeat();
     calcGarlicBread();
-    calcBevarage();
+
+    if (checkBevarage.checked) {
+        bevarageResponse.innerHTML = ' ';
+        calcBevarage();
+    };
+
 });
 
 function calcMeat() {
@@ -22,20 +27,17 @@ function calcGarlicBread() {
     const garlicBread = (valueAdult * 2) + (valueChild * 1);
 
     pPremium.innerText += `
-                            Pão de alho: ${garlicBread*2} unidades.`;
+                            Pão de alho: ${garlicBread * 2} unidades.`;
     pComum.innerText += `
                             Pão de alho: ${garlicBread} unidades.`;
 };
 
 function calcBevarage() {
     const valueAdult = inputAdult.value;
-    if (checkBevarage.checked) {
-        const beer = valueAdult * 4;
+    const beer = valueAdult * 4;
 
-        const bevarageResponse = document.createElement('div');
-        divText.appendChild(bevarageResponse);
+    divText.appendChild(bevarageResponse);
 
-        bevarageResponse.innerHTML =`<h2> Bebidas </h2>
-                                    <p>Cerveja: ${beer} unidades.</p>`
-    };
+    bevarageResponse.innerHTML = `<h2> Bebidas </h2>
+                                  <p>Cerveja: ${beer} unidades.</p>`
 };
