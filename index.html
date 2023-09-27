@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
     <title>Churrascomêtro</title>
 </head>
 
 <body>
     <header id="header">
+        <button onclick="darkTheme()"> Tema Escuro</button>
     </header>
 
     <main>
@@ -18,15 +20,22 @@
         <div id='inputs'></div>
         <div id='calculator'></div>
 
-        <div id="response"></div>
+        <div id="response">
+            <picture>
+                <img id="imgBarbecue" src="./image/undraw_barbecue_3x93.png" alt="Pessoa com churrasqueira grelhando carne.">
+            </picture>
+
+        </div>
+
 
     </main>
 
 
     <script src="./script/elements.js"></script>
     <script src="./script/response.js"></script>
-   
+    <script src="./script/events.js"></script>
     <script src="./script/calculator.js"></script>
+    <script src="./script/theme.js"></script>
 
 </body>
 

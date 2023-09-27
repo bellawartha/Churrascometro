@@ -4,9 +4,40 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h1,
+h2,
+p,
+label,
+input,
+button {
+    color: #414059;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 header {
     text-align: center;
     padding: 0.5%;
+}
+
+header button {
+    margin-left: 85%;
+    background-color: #414059;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+header button:hover {
+    background-color: #2a2938;
 }
 
 #inputs {
@@ -17,9 +48,10 @@ header {
 
 .input_group {
     display: flex;
+    background-color: #635ef28a;
     flex-direction: column;
     align-items: center;
-    border: 2px solid blue;
+    border: 3px solid #635EF2;
     width: 15%;
     padding: 3rem;
     border-radius: 2rem;
@@ -30,6 +62,7 @@ header {
 }
 
 .input_group input {
+    background-color: #635ef205;
     max-width: 3rem;
     font-size: 2rem;
     border: none;
@@ -37,17 +70,26 @@ header {
     text-align: center;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .input_group button {
     margin: 0.5rem;
     font-size: 1.2rem;
+    width: 40px;
+    height: 35px;
+    background-color: #F26389;
+    border: none;
+    border-radius: 0.5rem;
 }
 
+.input_group button:hover {
+    background-color: #414059;
+    color: white;
+}
 
 #calculator {
     display: flex;
@@ -57,7 +99,41 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 5rem;
 }
 
-#response {
-    visibility:hidden;
+#calculator button {
+    background-color: #414059;
+    border: none;
+    padding: 1%;
+    border-radius: 1rem;
+    font-size: 1rem;
 }
 
+#calculator button:hover {
+    background-color: #2a2938;
+}
+
+#bevarage {
+    display: flex;
+    align-items: center;
+}
+
+#bevarage label {
+    margin-right: 1.5rem;
+}
+
+#response {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25vh;
+    margin-bottom: 20vh; 
+}
+
+#response div {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#response picture img {
+    width: 30rem;
+}

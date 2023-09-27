@@ -1,87 +1,86 @@
 // Header
-
-const header = document.getElementById ('header');
-const title = document.createElement ('h1');
+const header = document.getElementById('header');
+const title = document.createElement('h1');
 title.innerText = 'Churrascomêtro';
-header.appendChild (title);
+header.appendChild(title);
 
 // Calculadora
-const inputs = document.getElementById ('inputs');
-const calculator = document.getElementById ('calculator');
+const inputs = document.getElementById('inputs');
+const calculator = document.getElementById('calculator');
 
 // Adultos
-
-const divAdult = document.createElement ('div');
-const labelAdult = document.createElement ('label');
-const inputAdult = document.createElement ('input');
-const divBtnAdult = document.createElement ('div');
-const btnPlusAdult = document.createElement ('button');
-const btnMinusAdult = document.createElement ('button');
+const divAdult = document.createElement('div');
+const labelAdult = document.createElement('label');
+const inputAdult = document.createElement('input');
+const divBtnAdult = document.createElement('div');
+const btnPlusAdult = document.createElement('button');
+const btnMinusAdult = document.createElement('button');
 
 labelAdult.innerText = "Adultos";
 btnPlusAdult.innerText = "+";
 btnMinusAdult.innerText = "-";
 
-inputAdult.setAttribute ('id', 'adult');
-labelAdult.setAttribute ('for', 'adult');
+inputAdult.setAttribute('id', 'adult');
+labelAdult.setAttribute('for', 'adult');
 inputAdult.setAttribute('type', 'number');
-inputAdult.setAttribute ('min', '0');
-inputAdult.setAttribute ('value', '0');
-divAdult.setAttribute ('class', 'input_group');
+inputAdult.setAttribute('min', '0');
+inputAdult.setAttribute('value', '0');
+divAdult.setAttribute('class', 'input_group');
 
-inputs.appendChild (divAdult);
-divAdult.appendChild (labelAdult);
+inputs.appendChild(divAdult);
+divAdult.appendChild(labelAdult);
 divAdult.appendChild(inputAdult);
-divAdult.appendChild (divBtnAdult);
-divBtnAdult.appendChild (btnMinusAdult);
-divBtnAdult.appendChild (btnPlusAdult);
+divAdult.appendChild(divBtnAdult);
+divBtnAdult.appendChild(btnMinusAdult);
+divBtnAdult.appendChild(btnPlusAdult);
 
 // Crianças
-
 const divChild = document.createElement('div');
-const labelChild = document.createElement ('label');
-const inputChild = document.createElement ('input');
-const divBtnChild = document.createElement ('div');
-const btnPlusChild = document.createElement ('button');
-const btnMinusChild = document.createElement ('button');
+const labelChild = document.createElement('label');
+const inputChild = document.createElement('input');
+const divBtnChild = document.createElement('div');
+const btnPlusChild = document.createElement('button');
+const btnMinusChild = document.createElement('button');
 
 labelChild.innerText = 'Crianças';
 btnPlusChild.innerText = "+";
 btnMinusChild.innerText = "-";
 
-inputChild.setAttribute ('id', 'child');
-labelChild.setAttribute ('for', 'child');
+inputChild.setAttribute('id', 'child');
+labelChild.setAttribute('for', 'child');
 inputChild.setAttribute('type', 'number');
-inputChild.setAttribute ('min', '0');
-inputChild.setAttribute ('value', '0');
-divChild.setAttribute ('class', 'input_group');
+inputChild.setAttribute('min', '0');
+inputChild.setAttribute('value', '0');
+divChild.setAttribute('class', 'input_group');
 
-inputs.appendChild (divChild);
+inputs.appendChild(divChild);
 divChild.appendChild(labelChild);
 divChild.appendChild(inputChild);
-divChild.appendChild (divBtnChild);
-divBtnChild.appendChild (btnMinusChild);
-divBtnChild.appendChild (btnPlusChild);
+divChild.appendChild(divBtnChild);
+divBtnChild.appendChild(btnMinusChild);
+divBtnChild.appendChild(btnPlusChild);
 
 // Bebidas
-
-const divBevarage = document.createElement ('div');
-const labelBevarage = document.createElement
-('label');
-const checkBevarage = document.createElement ('input');
+const divBevarage = document.createElement('div');
+const labelBevarage = document.createElement('label');
+const checkBevarage = document.createElement('input');
 
 labelBevarage.innerText = 'Com bebidas alcoólicas ?';
 
 checkBevarage.setAttribute('type', 'checkbox');
-checkBevarage.setAttribute('id', 'bevarage');
+divBevarage.setAttribute('id', 'bevarage');
 
-calculator.appendChild (divBevarage);
-divBevarage.appendChild (labelBevarage);
-divBevarage.appendChild (checkBevarage);
+calculator.appendChild(divBevarage);
+divBevarage.appendChild(labelBevarage);
+divBevarage.appendChild(checkBevarage);
 
 // Botão
-const btnCalc = document.createElement ('button');
-btnCalc.innerText = 'Calcular'
-btnCalc.setAttribute ('onclick', 'calc()');
-calculator.appendChild (btnCalc);
+const btnCalc = document.createElement('button');
+const btnResponse = document.createElement('a');
 
+btnResponse.innerText = 'Calcular';
+
+btnResponse.setAttribute('href', '#response');
+
+calculator.appendChild(btnCalc);
+btnCalc.appendChild(btnResponse);
