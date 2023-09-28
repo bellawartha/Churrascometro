@@ -1,5 +1,6 @@
 btnResponse.addEventListener('click', () => {
     response.style.display = 'flex';
+    divRegister.style.display = 'flex';
     calcMeat();
     calcGarlicBread();
 

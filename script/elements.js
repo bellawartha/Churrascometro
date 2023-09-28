@@ -79,7 +79,7 @@ const btnResponse = document.createElement('a');
 
 btnResponse.innerText = 'Calcular';
 
-btnResponse.setAttribute('href', '#response');
+btnResponse.setAttribute('href', '#register');
 
 calculator.appendChild(btnResponse);
 

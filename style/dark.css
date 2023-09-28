@@ -1,0 +1,52 @@
+.dark {
+    background-color: #414059;
+
+    & h1,
+    h2,
+    p,
+    label,
+    input,
+    button {
+        color: white;
+    }
+
+    & header button {
+        background-color: #2a2938;
+    }
+
+    & header button:hover {
+        background-color: #555475;
+    }
+
+    & .input_group {
+        background-color: #983C80;
+        border: 3px solid #471c3c;
+
+        & button {
+            background-color: #F64F46;
+        }
+
+        & button:hover {
+            background-color: #414059;
+            color: white;
+        }
+    }
+
+    & #calculator a {
+        background-color: #2a2938;
+    }
+
+    & #calculator a:hover {
+        background-color: #555475;
+    }
+
+    & #response {
+
+        & div {
+            
+            & div {
+                background-color: #2a293896;
+            }
+        }
+    }
+}
