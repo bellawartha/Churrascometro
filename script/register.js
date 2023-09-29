@@ -11,7 +11,7 @@ const labelEmail = document.createElement('label');
 
 const btnRegister = document.createElement('button');
 
-h2Register.innerText = 'Quer receber o orçamento completo do seu churrasco de forma descomplicada?'
+h2Register.innerText = 'Quer receber o orçamento completo do seu churrasco de forma descomplicada?';
 labelName.innerText = 'Nome';
 labelEmail.innerText = 'Email';
 btnRegister.innerText = 'Quero receber meu orçamento';
@@ -37,22 +37,19 @@ divInput.appendChild(labelEmail);
 divInput.appendChild(inputEmail);
 
 // Session Storage
-const nameStorage = localStorage.getItem('nome');
-const emailStorage = localStorage.getItem('email');
-
-inputName.setAttribute('value', nameStorage);
-inputEmail.setAttribute('value', emailStorage);
-
 // Event
 btnRegister.addEventListener('click', () => {
-    alert('Dados cadastrados com sucesso! Enviamos para o seu email o orçamento!')
-    
     localStorage.setItem('nome', inputName.value);
     localStorage.setItem('email', inputEmail.value);
 
+    const nameStorage = localStorage.getItem('nome');
+    const emailStorage = localStorage.getItem('email');
 
-    console.log(nameStorage);
-    console.log(emailStorage);
+        inputName.setAttribute('value', nameStorage);
+        inputEmail.setAttribute('value', emailStorage);
+
+    alert(`Olá ${nameStorage}! Enviamos para o seu email o orçamento!`);
+
 });
 
 
