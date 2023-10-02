@@ -1,7 +1,6 @@
 const response = document.getElementById('response');
-const divText = document.createElement('div');
+const divText = document.getElementById('text');
 
-response.appendChild(divText)
 
 // Premium
 const divPremium = document.createElement('div');
@@ -25,3 +24,4 @@ divComum.appendChild(pComum);
 
 // Bebidas
 const bevarageResponse = document.createElement('div');
+const alcoholicResponse = document.createElement('div');

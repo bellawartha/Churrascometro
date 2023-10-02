@@ -50,3 +50,12 @@
         }
     }
 }
+
+.dark #register {
+
+    & h2,
+    label {
+        color: white;
+    }
+
+}

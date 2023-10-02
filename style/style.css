@@ -124,49 +124,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-#register {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10vh;
-    padding-top: 5vh;
-    padding-bottom: 6vh;
-    background-color: #2a2938;
-
-    & h2,
-    label {
-        color: white;
-    }
-
-    & div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2rem;
-        margin-top: 3rem;
-
-    }
-
-    & input {
-        background-color: #52516e;
-        padding: 0.7rem;
-        border-radius: 0.5rem;
-        color: white;
-    }
-
-    & input::placeholder {
-        color: #9290bd;
-    }
-
-    & button {
-        margin-top: 3rem;
-        padding: 0.7rem;
-        border: none;
-        border-radius: 0.5rem;
-        background-color: #F26389;
-        color: white;
-    }
-}
 
 #response {
     display: none;

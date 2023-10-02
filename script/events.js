@@ -3,7 +3,9 @@ btnPlusAdult.addEventListener('click', () => {
 });
 
 btnMinusAdult.addEventListener('click', () => {
-    inputAdult.value--;
+    if (inputAdult.value > 0) {
+        inputAdult.value--;
+    };
 });
 
 btnPlusChild.addEventListener('click', () => {
@@ -11,6 +13,8 @@ btnPlusChild.addEventListener('click', () => {
 });
 
 btnMinusChild.addEventListener('click', () => {
-    inputChild.value--;
+    if (inputChild.value > 0) {
+        inputChild.value--;
+    };
 });
 

@@ -23,7 +23,6 @@ btnMinusAdult.innerText = "-";
 inputAdult.setAttribute('id', 'adult');
 labelAdult.setAttribute('for', 'adult');
 inputAdult.setAttribute('type', 'number');
-inputAdult.setAttribute('min', '0');
 inputAdult.setAttribute('value', '0');
 divAdult.setAttribute('class', 'input_group');
 
@@ -49,7 +48,6 @@ btnMinusChild.innerText = "-";
 inputChild.setAttribute('id', 'child');
 labelChild.setAttribute('for', 'child');
 inputChild.setAttribute('type', 'number');
-inputChild.setAttribute('min', '0');
 inputChild.setAttribute('value', '0');
 divChild.setAttribute('class', 'input_group');
 
@@ -65,7 +63,7 @@ const divBevarage = document.createElement('div');
 const labelBevarage = document.createElement('label');
 const checkBevarage = document.createElement('input');
 
-labelBevarage.innerText = 'Com bebidas alcoólicas ?';
+labelBevarage.innerText = 'Com bebidas alcoólicas?';
 
 checkBevarage.setAttribute('type', 'checkbox');
 divBevarage.setAttribute('id', 'bevarage');
@@ -79,7 +77,7 @@ const btnResponse = document.createElement('a');
 
 btnResponse.innerText = 'Calcular';
 
-btnResponse.setAttribute('href', '#register');
+btnResponse.setAttribute('href', '#response');
 
 calculator.appendChild(btnResponse);
 
