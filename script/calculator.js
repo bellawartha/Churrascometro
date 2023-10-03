@@ -4,8 +4,8 @@ btnResponse.addEventListener('click', () => {
 
     if (valueAdult > 0 || valueChild > 0) {
 
-        response.style.display = 'flex';
-        
+        response.style.display = 'grid';
+
         calcMeat();
         calcGarlicBread();
         calcBevarage();
@@ -17,7 +17,7 @@ btnResponse.addEventListener('click', () => {
         };
 
     } else {
-        alert ('Adicione pessoas ao seu churrasco para fazer o orçamento!')
+        alert('Adicione pessoas ao seu churrasco para fazer o orçamento!')
     };
 
 });
@@ -54,17 +54,16 @@ function calcGarlicBread() {
 function calcBevarage() {
     const valueAdult = Number(inputAdult.value);
     const valueChild = Number(inputChild.value);
-    const total = valueAdult + valueChild;
-    const soda = total / 5;
-    const ice = total / 10;
-    const water = total/5;
+    let total = valueAdult + valueChild;
+    let soda = Math.ceil(total / 4);
+    let ice = Math.ceil(total / 5);
 
     divText.appendChild(bevarageResponse);
 
     bevarageResponse.innerHTML = `<h2> Bebidas </h2>
-                                  <p>Refrigerante: ${soda} unidades de 2L</p>
-                                  <p>Água: ${water} unidades de 1L.</p>
-                                  <p>Gelo: ${ice} unidades de 5kg</p>`
+                                  <p>Refrigerante: ${soda} unidades de 2L.<br>
+                                  Água: ${total} unidade de 500ml.<br>
+                                  Gelo: ${ice} unidades de 5kg</p> `
 };
 
 function alcoholic() {
