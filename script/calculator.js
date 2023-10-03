@@ -12,6 +12,8 @@ btnResponse.addEventListener('click', () => {
 
         if (checkBevarage.checked) {
             alcoholic();
+        } else {
+            divText.removeChild(alcoholicResponse);
         };
 
     } else {

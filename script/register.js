@@ -53,8 +53,8 @@ labelCheck.innerText = 'Aceito receber e-mails com promoções'
 divCheck.setAttribute('id', 'divCheck');
 
 check.setAttribute('type', 'checkbox');
-check.setAttribute ('id', 'check');
-check.setAttribute ('checked', '');
+check.setAttribute('id', 'check');
+check.setAttribute('checked', '');
 
 labelCheck.setAttribute('for', 'check');
 
@@ -83,30 +83,42 @@ divInput.appendChild(inputCep);
 
 // Session Storage
 // Event
-btnRegister.addEventListener('click', () => {
-    if (inputName.value.trim() === '' || inputEmail.value.trim() === '' || inputCep.value.trim() === '') {
-        alert('Por favor digite as informações necessárias');
-    } else {
+const nameStorage = localStorage.getItem('nome');
+const emailStorage = localStorage.getItem('email');
+const cepStorage = localStorage.getItem('cep');
 
-        if (!inputEmail.value.includes('@')) {
+console.log(typeof nameStorage);
+console.log(typeof emailStorage);
+console.log(typeof cepStorage);
 
-            alert('Coloque um email válido!');
-
+if (typeof nameStorage === 'string' && typeof emailStorage === 'string' && typeof cepStorage === 'string') {
+    window.location.href = './calculator.html';
+    alert (`Olá ${nameStorage}! Seja bem vindo novamente!`);
+} else {
+    btnRegister.addEventListener('click', () => {
+        if (inputName.value.trim() === '' || inputEmail.value.trim() === '' || inputCep.value.trim() === '') {
+            alert('Por favor digite as informações necessárias');
         } else {
 
-            localStorage.setItem('nome', inputName.value);
-            localStorage.setItem('email', inputEmail.value);
+            if (!inputEmail.value.includes('@')) {
 
-            const nameStorage = localStorage.getItem('nome');
-            const emailStorage = localStorage.getItem('email');
+                alert('Coloque um email válido!');
 
-            inputName.setAttribute('value', nameStorage);
-            inputEmail.setAttribute('value', emailStorage);
+            } else {
+                localStorage.setItem('nome', inputName.value);
+                localStorage.setItem('email', inputEmail.value);
+                localStorage.setItem('cep', inputCep.value);
 
-            linkRegister.setAttribute('href', './calculator.html');
-
+                linkRegister.setAttribute('href', './calculator.html');
+            }
         }
-    }
-});
+
+       }
+    )
+};
+
+
+
+
 
 

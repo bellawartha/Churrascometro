@@ -81,3 +81,4 @@ btnResponse.setAttribute('href', '#response');
 
 calculator.appendChild(btnResponse);
 
+
