@@ -85,35 +85,41 @@ divInput.appendChild(inputCep);
 // Event
 const nameStorage = localStorage.getItem('nome');
 const emailStorage = localStorage.getItem('email');
-const cepStorage = localStorage.getItem('cep');
+const enderecoStorage = localStorage.getItem('endereco');
+const regexCEP = /^\d{8}$/;
 
-console.log(typeof nameStorage);
-console.log(typeof emailStorage);
-console.log(typeof cepStorage);
-
-if (typeof nameStorage === 'string' && typeof emailStorage === 'string' && typeof cepStorage === 'string') {
+if (typeof nameStorage === 'string' && typeof emailStorage === 'string' && typeof enderecoStorage === 'string') {
     window.location.href = './calculator.html';
-    alert (`Olá ${nameStorage}! Seja bem vindo novamente!`);
+    alert(`Olá ${nameStorage}! Seja bem vindo novamente!`);
 } else {
     btnRegister.addEventListener('click', () => {
         if (inputName.value.trim() === '' || inputEmail.value.trim() === '' || inputCep.value.trim() === '') {
             alert('Por favor digite as informações necessárias');
+
         } else {
 
-            if (!inputEmail.value.includes('@')) {
+            if (regexCEP.test(inputCep.value)) {
 
-                alert('Coloque um email válido!');
+                if (!inputEmail.value.includes('@')) {
+
+                    alert('Coloque um email válido!');
+
+                } else {
+
+                    localStorage.setItem('nome', inputName.value);
+                    localStorage.setItem('email', inputEmail.value);
+
+                    api.getAddressByPostalCode(inputCep.value);
+
+                    linkRegister.setAttribute('href', './calculator.html');
+                }
 
             } else {
-                localStorage.setItem('nome', inputName.value);
-                localStorage.setItem('email', inputEmail.value);
-                localStorage.setItem('cep', inputCep.value);
-
-                linkRegister.setAttribute('href', './calculator.html');
+                alert('Cep inválido. Digite apenas os números, sem hífen');
             }
         }
 
-       }
+    }
     )
 };
 
