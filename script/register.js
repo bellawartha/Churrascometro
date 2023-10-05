@@ -105,17 +105,22 @@ if (typeof nameStorage === 'string' && typeof emailStorage === 'string' && typeo
                     alert('Coloque um email válido!');
 
                 } else {
-
                     localStorage.setItem('nome', inputName.value);
                     localStorage.setItem('email', inputEmail.value);
+                    localStorage.setItem('cep', inputCep.value);
 
-                    api.getAddressByPostalCode(inputCep.value);
+                    getAddressByPostalCode(localStorage.getItem('cep'))
+                    .then((resp)=>{
+                         localStorage.setItem('endereco', JSON.stringify(resp));
+                         linkRegister.setAttribute('href', './calculator.html');
+                    })
+                    .catch((error) => alert(error))
 
-                    linkRegister.setAttribute('href', './calculator.html');
+                   
                 }
 
             } else {
-                alert('Cep inválido. Digite apenas os números, sem hífen');
+                alert('CEP inválido. Digite apenas os oito números, sem hífen');
             }
         }
 
