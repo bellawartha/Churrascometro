@@ -13,7 +13,7 @@ function getAddressByPostalCode(cep) {
             .then((response) => response.json())
             .then((dados) => {
                 if (dados.erro === true) {
-                    reject("CEP não encontrado");
+                    reject("CEP não encontrado.");
                 } else {
                     resolve(dados);
                 }

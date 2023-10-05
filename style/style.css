@@ -35,11 +35,12 @@ header {
         padding: 0.5rem;
         border: none;
         border-radius: 0.5rem;
+
+        &:hover {
+            background-color: #2a2938;
+        }
     }
 
-    & button:hover {
-        background-color: #2a2938;
-    }
 }
 
 #inputs {
@@ -79,11 +80,11 @@ header {
         background-color: #F26389;
         border: none;
         border-radius: 0.5rem;
-    }
 
-    & button:hover {
-        background-color: #414059;
-        color: white;
+        &:hover {
+            background-color: #414059;
+            color: white;
+        }
     }
 }
 
@@ -108,11 +109,13 @@ input[type=number]::-webkit-outer-spin-button {
         padding: 0.7%;
         border-radius: 1rem;
         font-size: 1rem;
+
+        &:hover {
+            background-color: #2a2938;
+        }
     }
 
-    & a:hover {
-        background-color: #2a2938;
-    }
+
 }
 
 #bevarage {

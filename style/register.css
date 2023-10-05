@@ -26,11 +26,11 @@ header {
         padding: 0.5rem;
         border: none;
         border-radius: 0.5rem;
-    }
 
-    & button:hover {
-        background-color: #2a2938;
-        cursor: pointer;
+        &:hover {
+            background-color: #2a2938;
+            cursor: pointer;
+        }
     }
 }
 
@@ -82,10 +82,11 @@ header {
         border-radius: 0.5rem;
         background-color: #F26389;
         color: white;
-    }
 
-    & button:hover {
-        cursor: pointer;
+        &:hover {
+            cursor: pointer;
+            background-color: #df3260;
+        }
     }
 }
 

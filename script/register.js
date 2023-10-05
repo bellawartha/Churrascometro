@@ -90,7 +90,7 @@ const regexCEP = /^\d{8}$/;
 
 if (typeof nameStorage === 'string' && typeof emailStorage === 'string' && typeof enderecoStorage === 'string') {
     window.location.href = './calculator.html';
-    alert(`Olá ${nameStorage}! Seja bem vindo novamente!`);
+    alert(`Olá ${nameStorage}! Seja bem vindx novamente!`);
 } else {
     btnRegister.addEventListener('click', () => {
         if (inputName.value.trim() === '' || inputEmail.value.trim() === '' || inputCep.value.trim() === '') {
@@ -115,15 +115,11 @@ if (typeof nameStorage === 'string' && typeof emailStorage === 'string' && typeo
                          linkRegister.setAttribute('href', './calculator.html');
                     })
                     .catch((error) => alert(error))
-
-                   
                 }
-
             } else {
-                alert('CEP inválido. Digite apenas os oito números, sem hífen');
+                alert('CEP inválido. Digite apenas os oito números, sem hífen.');
             }
         }
-
     }
     )
 };

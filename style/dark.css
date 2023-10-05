@@ -12,10 +12,10 @@
 
     & header button {
         background-color: #2a2938;
-    }
 
-    & header button:hover {
-        background-color: #555475;
+        &:hover {
+            background-color: #555475;
+        }
     }
 
     & .input_group {
@@ -24,20 +24,20 @@
 
         & button {
             background-color: #F64F46;
-        }
 
-        & button:hover {
-            background-color: #414059;
-            color: white;
+            &:hover {
+                background-color: #414059;
+                color: white;
+            }
         }
     }
 
     & #calculator a {
         background-color: #2a2938;
-    }
 
-    & #calculator a:hover {
-        background-color: #555475;
+        &:hover {
+            background-color: #555475;
+        }
     }
 
     & #response {
