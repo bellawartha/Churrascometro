@@ -32,7 +32,11 @@ A quantidade estimada dos ingredientes necessários será exibida automaticament
 
 ## :wrench: Tecnologias utilizadas
 JavaScript: Como a linguagem de programação para a manipulação do DOM e o cálculo dos ingredientes.
+
+
 HTML: Como a linguagem de marcação para estruturação da página.
+
+
 CSS: Como a linguagem de estilização para definir o layout e as cores do site.
 
 ## :handshake: Contribuindo
