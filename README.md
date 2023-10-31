@@ -28,5 +28,5 @@ Se você deseja contribuir para o desenvolvimento do Churrascomêtro, sinta-se �
 ## Licença
 O Churrascomêtro é um projeto de código aberto licenciado sob a MIT License. Sinta-se à vontade para utilizar, modificar e distribuir o código conforme necessário.
 
-##Contato 
+## Contato 
 Se tiver alguma dúvida ou sugestões sobre o projeto, por favor me mande um emial: isabella.wartha@gmail.com
