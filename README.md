@@ -19,7 +19,7 @@ O site do Churrascometro possui um tema escuro para melhorar a experiência do u
 O Churrascometro utiliza o recurso de armazenamento LocalStorage do navegador para guardar os dados do usuário cadastrado. Isso permite que o usuário não tenha que realizar um novo cadastro se quiser utilizar novamente o Churrascomêtro.
 
 ## :rocket: Como utilizar o Churrascomêtro
-Acesse a página de cadastro do Churrascomêtro <a href="https://bellawartha.github.io/Churrascometro/"> AQUI </a>
+Acesse a página do Churrascomêtro <a href="https://bellawartha.github.io/Churrascometro/"> AQUI </a>
 
 
 Insira os dados do usuário e clique em "Fazer meu orçamento".
